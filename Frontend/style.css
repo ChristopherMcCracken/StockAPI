@@ -1,0 +1,78 @@
+:root
+{
+	--mainColor: #363946;
+	--secondaryColor: #696773;
+	--mainText: #E6E6E6;
+	background-color: var(--mainColor);
+}
+
+html
+{
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, strong
+{
+	color: var(--mainText);
+	font-family: 'Russo One', sans-serif;
+	font-weight: 500;
+}
+
+h1 { font-size: 56px;}
+h2 { font-size: 36px;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
+
+p, li, span, label, input, textarea
+{
+	color: var(--mainText);
+	background-color: var(--secondaryColor);
+	font-family: 'Roboto Mono', monospace;
+}
+
+button
+{
+	background-color: var(--secondaryColor);
+  color: var(--mainText);
+}
+
+body
+{
+	padding: 25px;
+}
+
+#stockAPIFrontend
+{
+	grid-area: stockAPIFrontend;
+	text-align: center;
+}
+#stockInputButton
+{
+	grid-area: stockInputButton;
+}
+#stockInput
+{
+	grid-area: stockInput;
+}
+#stockData
+{
+	grid-area: stockData;
+}
+
+.stockQuery
+{
+	display: grid;
+	grid-template-areas:
+	"stockAPIFrontend stockAPIFrontend"
+	"stockInputButton stockInput"
+	"stockData stockData";
+}
+
+.stockData
+{
+	display: flex;
+}
